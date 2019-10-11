@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="assets/stylesheets/reset.css" />
+    <link rel="stylesheet" href="assets/stylesheets/main.css" />
+  </head>
+
+  <body>
+    <div id="container">
+
+      <form accept-charset="utf-8" action="/users" method="post">
+
+        <h2>See all your finances in one place &amp; create a budget.</h2>
+
+        <span class="tooltip" id="tooltip_required_fields">Fields marked with an asterisk(*) are required.</span>
+
+        <fieldset class="account-info">
+          <div class="email">
+            <label for="email">Your Email*</label>
+            <input name="user[email]" type="email" id="email" placeholder="name@domain.com" />
+            <span class="tooltip" id="tooltip_email">Please enter a valid email address. This will be used as your user ID.</span>
+            <p class=""></p>
+          </div>
+
+          <div class="email_confirmation">
+            <label for="email_confirmation">Email Confirmation*</label>
+            <input name="user[email_confirmation]" type="email" id="email_confirmation" placeholder="name@domain.com" />
+            <p class=""></p>
+          </div>
+
+          <div>
+            <label for="phone_number">Phone (recommended)</label>
+            <input name="user[phone_number]" type="tel" id="phone_number" placeholder="xxx-xxx-xxxx" />
+            <span class="tooltip" id="tooltip_phone_number">This will help verify your account and keep it safe.</span>
+          </div>
+
+          <div class="password">
+            <label for="password">Password*</label>
+            <input name="user[password]" type="password" id="password" placeholder="Password" />
+            <span class="tooltip" id="tooltip_password">Your password should be at least 6 characters long.</span>
+            <p class=""></p>
+          </div>
+
+          <div class="password_confirmation">
+            <label for="password_confirmation">Password Confirmation*</label>
+            <input name="user[password_confirmation]" type="password" id="password_confirmation" placeholder="Password Confirmation" />
+            <p class=""></p>
+          </div>
+        </fieldset>
+
+        <fieldset class="account-action">
+          <div>
+            <label  class="holder" for="remember_me">
+              <input name="user[remember_me]" type="checkbox" id="remember_me" />
+              <div id="checkmark"></div>
+            </label>
+            <label for="remember_me">Remember Me</label>
+          </div>
+
+          <div>
+            <button name="submit" type="submit"><span class="sign_up_img"></span><span class="words">Sign Up</span></button>
+            <small>By clicking SIGN UP you agree to our <a href="https://www.mint.com/terms">Terms of Use</a> and <a href="https://www.mint.com/privacy">Privacy</a> Satement</small>
+          </div>
+        </fieldset>
+      </form>
+
+    </div>
+    <script src="assets/js/jquery-3.1.1.min.js"></script>
+    <script src="assets/js/masked_input_plugin.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
+
+</html>

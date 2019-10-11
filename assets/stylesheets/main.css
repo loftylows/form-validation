@@ -1,0 +1,176 @@
+#container {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+form {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 700px;
+  padding-left: 150px;
+  padding-right: 50px;
+  padding-top: 15px;
+  margin-top: 0px;
+  box-shadow: 1px 3px 8px rgba(0, 0, 0, 0.2); /*This is an awesome box effect without a border and only a box shadow*/
+}
+.tooltip {
+  position: absolute;
+  display: inline-block;
+  font-size: 11px;
+  margin-left: 7px;
+  visibility: hidden;
+  color: #636363;
+  font-weight: 300
+}
+#tooltip_required_fields {
+  margin-left: 10px;
+}
+form div {
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1.5;
+  font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+::-webkit-input-placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+::-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+:-moz-placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+::-ms-input-placeholder {
+  font-size: 14px;
+  line-height: 1.5;
+  font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+form div:first-of-type {
+  margin-top: 15px;
+}
+form div:nth-of-type(1n+2) {
+  margin-top: 25px;
+}
+form h2 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  max-width: 398px;
+  line-height: 1.5;
+}
+fieldset {
+  border-style: none;
+}
+.account-info div label {
+  display: block;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+}
+.account-info input {
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+  font-size: 1.2em;
+  width: 320px;
+  height: 34px;
+  padding-left: 8px;
+  padding-right: 6px;
+  box-shadow: none;
+}
+.success_message {
+  font-size: 12px;
+  color: green;
+}
+.error_message {
+  font-size: 12px;
+  color: red;
+}
+button[type=submit] {
+  box-sizing: border-box;
+  cursor: pointer;
+  background: #45cae6;
+  color: white;
+  font-family: "AvenirNext-Regular-Mint", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-size: contain;
+  height: 34px;
+  margin-top: 2px;
+  margin-right: 4px;
+  vertical-align: text-top;
+  display: block;
+  text-transform: capitalize;
+  border-radius: 2px;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.3em;
+  padding: 0 20px;
+  border: none;
+  vertical-align: baseline;
+  margin-bottom: 15px;
+  transition: background .2s;
+}
+button[type=submit]:hover {
+  background: #45BCE6;
+  box-shadow: box-shadow: 2px 2px 2px #EBEBEB;
+}
+span.sign_up_img {
+  height: 1em;
+  width: 0.8em;
+  margin: -1.4px 2px;
+  margin-right: 4px;
+  display: inline-block;
+  box-sizing: border-box;
+  background-image: url(https://accounts.intuit.com/IUS-Plugins/v2/images/icon-whitelock@3x.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+span.words {
+  padding-left: 5px;
+}
+.account-action small {
+  color: #7d7f80;
+}
+.account-action small a {
+  text-decoration: none;
+  color: #45cae6;
+  cursor: pointer;
+}
+.account-action input[type=checkbox] {
+  position: absolute;
+  top: 3px;
+  left: 4px;
+  visibility: hidden;
+}
+.account-action div label:nth-of-type(2) {
+  margin-left: 5px;
+}
+.holder {
+  cursor: pointer;
+  position: relative;
+  margin-left: 0px;
+  top: 5px;
+  width: 19px;
+  height: 19px;
+  display: inline-block;
+  border-radius: 3px;
+  border: 1px solid #d8d8d8;
+}
+#checkmark {
+  position: absolute;
+  content: "";
+  top: -12px;
+  left: 2px;
+  width: 12px;
+  height: 6px;
+  border: 3px solid #0077C5;
+  border-top: none;
+  border-right: none;
+  transform: rotate(-45deg);
+  opacity: 0;
+}
